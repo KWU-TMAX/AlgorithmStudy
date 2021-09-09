@@ -6,7 +6,7 @@
 using namespace std;
 
 
-bool solution(vector<string> phone_book) {
+bool solutionFirst(vector<string> phone_book) {
 
 
 	for (int j = 0; j < phone_book.size() - 1; j++)
@@ -31,7 +31,7 @@ bool solution(vector<string> phone_book) {
 // 1번 solution 효율성 테스트 3,4 실패
 
 
-bool solution(vector<string> phone_book) {
+bool solutionSecond(vector<string> phone_book) {
 
     for (int i = 0; i < phone_book.size(); i++) {
         for (int j = 0; j < phone_book.size(); j++) {
@@ -53,7 +53,7 @@ bool solution(vector<string> phone_book) {
 
 using namespace std;
 
-bool solution(vector<string> phone_book) {
+bool solutionThird(vector<string> phone_book) {
     
     bool answer = true;
 
