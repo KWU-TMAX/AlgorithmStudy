@@ -1,4 +1,4 @@
-``` c++
+
 #include <string>
 #include <cstring>
 #include <vector>
@@ -26,15 +26,10 @@ bool solution(vector<string> phone_book) {
 	return true;
 }
 
-```
 
-효율성 테스트 3,4 실패
 
-``` c++
-#include <string>
-#include <vector>
+// 1번 solution 효율성 테스트 3,4 실패
 
-using namespace std;
 
 bool solution(vector<string> phone_book) {
 
@@ -51,12 +46,9 @@ bool solution(vector<string> phone_book) {
     }
     return true;
 }
-```
-이것도 효율성 3,4 실패
 
-``` c++
-#include <string>
-#include <vector>
+// 2번 solution 효율성 테스트 3,4 실패
+
 #include <unordered_map>
 
 using namespace std;
@@ -91,6 +83,4 @@ bool solution(vector<string> phone_book) {
     return answer;
 }
 
-```
-
-통과 
+// 통과 
