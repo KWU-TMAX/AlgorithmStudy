@@ -3,12 +3,14 @@
 #include <queue>
 using namespace std;
 
+// priority_queue는 들어간 순서에 상관없이 우선순위가 높은 데이터가 먼저 나오는 것
 priority_queue<int, vector<int>, greater<int>> cp;
 
 int solution(vector<int> scoville, int K) {
     int answer = 0;
     bool result = false;
     for(int i = 0; i<scoville.size(); i++) {
+        // priority queue 에 넣는 과정
         cp.push(scoville[i]);
     }   
     
