@@ -14,9 +14,10 @@ function solution(genres, plays) {
         }
     }
     let sortable = [];
-    for(let key in obj) {
+    for(let key in obj) {   // classic , pop
         sortable.push([key, obj[key].value]);
     }
+    // b[1] - a[1] 내림차순, obj[key].value 이 값을 비교해서 sorting을 한다.
     sortable.sort((a,b) => b[1] - a[1]);
     for(let sorted of sortable) {
         obj[sorted[0]].arr.sort((a,b) => b[1] - a[1]);
