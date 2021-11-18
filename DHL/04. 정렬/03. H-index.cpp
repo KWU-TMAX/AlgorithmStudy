@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-#include <algorithm>
 #include <iostream>
 
 using namespace std;
@@ -9,7 +8,7 @@ using namespace std;
 int solution(vector<int> citations) {
     int answer = 0;
     int avg = 0;
-    sort(citations.begin(),citations.end());
+    
     for(int i =0; i < citations.size(); i++)
     {
         avg+=citations[i];
