@@ -11,10 +11,11 @@ using namespace std;
 int solution(vector<int> citations) {
     int answer = 0;
     int avg = 0;
-    
+    int max = 0;
     for(int i =0; i < citations.size(); i++)
     {
         avg+=citations[i];
+        if(max <= citations[i]) max =citations[i];
     }
     avg= avg/citations.size(); 
     // 평균 값을 구한다. 
@@ -24,6 +25,8 @@ int solution(vector<int> citations) {
     // 평균 h-1이 h-1 이상이면 그게 H-index가 됨 
     
     answer = avg;
+    //answer = max;
+    // max로 가도 solution 통과 
     while(true){
         int count=0;
         for(int i = 0;i <citations.size(); i++)
