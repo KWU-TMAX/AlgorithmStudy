@@ -45,6 +45,6 @@ int main()
     a.push_back(1);
     a.push_back(0);
     
-    std::cout << solution(a) ;
+    std::cout << solution(a) ; //2
     return 0;
 }
