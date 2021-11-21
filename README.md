@@ -7,13 +7,13 @@
 #### 1. Study 내용
 
 - [프로그래머스 고득점 kit](https://programmers.co.kr/learn/challenges) 문제
-  - [해시](https://programmers.co.kr/learn/courses/30/parts/12077)
-  - [스택/큐](https://programmers.co.kr/learn/courses/30/parts/12081)
-  - [힙](https://programmers.co.kr/learn/courses/30/parts/12117)
-  - [정렬](https://programmers.co.kr/learn/courses/30/parts/12198)
-  - [완전 탐색](https://programmers.co.kr/learn/courses/30/parts/12230)
-  - [탐욕법](https://programmers.co.kr/learn/courses/30/parts/12244)
-  - [동적 계획법](https://programmers.co.kr/learn/courses/30/parts/12263)
+  - [해시](https://programmers.co.kr/learn/courses/30/parts/12077) :white_check_mark:
+  - [스택/큐](https://programmers.co.kr/learn/courses/30/parts/12081) :white_check_mark:
+  - [힙](https://programmers.co.kr/learn/courses/30/parts/12117) :white_check_mark:
+  - [정렬](https://programmers.co.kr/learn/courses/30/parts/12198) :white_check_mark:
+  - [완전 탐색](https://programmers.co.kr/learn/courses/30/parts/12230) 
+  - [탐욕법](https://programmers.co.kr/learn/courses/30/parts/12244) 
+  - [동적 계획법](https://programmers.co.kr/learn/courses/30/parts/12263) 
   - [깊이/너비 우선 탐색](https://programmers.co.kr/learn/courses/30/parts/12421)
   - [이분탐색](https://programmers.co.kr/learn/courses/30/parts/12486)
   - [그래프](https://programmers.co.kr/learn/courses/30/parts/14393)
