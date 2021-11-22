@@ -18,7 +18,7 @@
   - [이분탐색](https://programmers.co.kr/learn/courses/30/parts/12486)
   - [그래프](https://programmers.co.kr/learn/courses/30/parts/14393)
 
-- 추가예정
+- [삼성 기출문제 모음집](https://www.acmicpc.net/workbook/view/1152)
 
 #### 2. Study 방법
 
