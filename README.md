@@ -11,7 +11,7 @@
   - [스택/큐](https://programmers.co.kr/learn/courses/30/parts/12081) :white_check_mark:
   - [힙](https://programmers.co.kr/learn/courses/30/parts/12117) :white_check_mark:
   - [정렬](https://programmers.co.kr/learn/courses/30/parts/12198) :white_check_mark:
-  - [완전 탐색](https://programmers.co.kr/learn/courses/30/parts/12230) 
+  - [완전 탐색](https://programmers.co.kr/learn/courses/30/parts/12230) :white_check_mark:
   - [탐욕법](https://programmers.co.kr/learn/courses/30/parts/12244) 
   - [동적 계획법](https://programmers.co.kr/learn/courses/30/parts/12263) 
   - [깊이/너비 우선 탐색](https://programmers.co.kr/learn/courses/30/parts/12421)
