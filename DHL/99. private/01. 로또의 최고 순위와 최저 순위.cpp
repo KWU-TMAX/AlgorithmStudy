@@ -1,3 +1,5 @@
+// 풀이 시간은 5분이었지만
+// 하나의 솔루션이 통과하지 못했었다 그 경우가 경우의 가짓수를 7
 #include <string>
 #include <vector>
 #include <algorithm>
