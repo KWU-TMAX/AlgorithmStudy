@@ -1,3 +1,7 @@
+/*
+	compare 에 
+*/
+
 #include <string>
 #include <vector>
 #include <algorithm>
