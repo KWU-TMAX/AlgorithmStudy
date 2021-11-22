@@ -17,7 +17,7 @@
   - [깊이/너비 우선 탐색](https://programmers.co.kr/learn/courses/30/parts/12421)
   - [이분탐색](https://programmers.co.kr/learn/courses/30/parts/12486)
   - [그래프](https://programmers.co.kr/learn/courses/30/parts/14393)
-
+- [프로그래머스 모든 문제](https://programmers.co.kr/learn/challenges?tab=all_challenges)
 - [삼성 기출문제 모음집](https://www.acmicpc.net/workbook/view/1152)
 
 #### 2. Study 방법
