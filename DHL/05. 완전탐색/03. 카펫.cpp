@@ -1,3 +1,5 @@
+// 걸린 시간 13분
+
 #include <string>
 #include <vector>
 #include <algorithm>
