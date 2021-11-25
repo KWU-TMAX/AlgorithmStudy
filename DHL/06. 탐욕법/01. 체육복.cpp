@@ -34,7 +34,7 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
     }
     // 가져온 애들을 +1
     for(int i = 0; i < reserve.size(); i++) {
-        studentCloth[reserve[i]-1]++;/*
+        studentCloth[reserve[i]-1]++;
     }
     
     for(int i = 0; i < n; i++) {
