@@ -82,3 +82,67 @@ console.log(solution("0000", 3));
 // 테스트 10 〉	실패 (시간 초과)
 // 테스트 11 〉	통과 (0.13ms, 30.2MB)
 // 테스트 12 〉	실패 (0.13ms, 30.2MB)
+
+
+// function calculate(ret, strArr, count) {
+//     if(count < 1 || strArr.length === 0) return ret.concat(strArr);
+//     let checkStr = strArr.slice(0, count+1);
+//     let biggestNum = checkStr.sort((a,b)=>b-a)[0];
+//     ret.push(biggestNum);
+//     let idx = strArr.indexOf(biggestNum);
+//     return calculate(ret, strArr.slice(idx+1), count-idx);
+// }
+
+// function solution(number, k) {
+//     let cal = [];
+//     let ret = calculate(cal, number.split(''), k);
+//     if(ret[0] === "0") return "0";
+//     return ret.join('');
+// }
+
+// 테스트 1 〉	통과 (0.12ms, 30.3MB)
+// 테스트 2 〉	통과 (0.12ms, 30.2MB)
+// 테스트 3 〉	통과 (0.19ms, 30.3MB)
+// 테스트 4 〉	통과 (0.39ms, 30.4MB)
+// 테스트 5 〉	통과 (3.59ms, 31.7MB)
+// 테스트 6 〉	통과 (1241.64ms, 152MB)
+// 테스트 7 〉	통과 (3141.23ms, 629MB)
+// 테스트 8 〉	실패 (signal: aborted (core dumped))
+// 테스트 9 〉	통과 (144.51ms, 171MB)
+// 테스트 10 〉	실패 (signal: aborted (core dumped))
+// 테스트 11 〉	통과 (0.08ms, 30.2MB)
+// 테스트 12 〉	실패 (0.11ms, 30.3MB)
+// 여기서 보면 slice 보다 substring이 더 오래 걸리는 것을 알 수 있다...
+
+function solution(number, k) {
+    const stack = [];
+    let answer = '';
+
+    for(let i=0; i<number.length; i++) {
+        const el = number[i];
+
+        while(k>0 && stack[stack.length-1] < el) {
+            stack.pop();
+            k--;
+        }
+        stack.push(el);
+    }
+
+    stack.splice(stack.length-k, k);
+    answer = stack.join('');
+    return answer;
+}
+
+// 소름돋는 풀이다....
+// 테스트 1 〉	통과 (0.07ms, 30.1MB)
+// 테스트 2 〉	통과 (0.10ms, 30MB)
+// 테스트 3 〉	통과 (0.13ms, 30.3MB)
+// 테스트 4 〉	통과 (0.15ms, 30MB)
+// 테스트 5 〉	통과 (0.24ms, 30.4MB)
+// 테스트 6 〉	통과 (3.82ms, 32.9MB)
+// 테스트 7 〉	통과 (5.63ms, 34.4MB)
+// 테스트 8 〉	통과 (8.88ms, 35.2MB)
+// 테스트 9 〉	통과 (24.25ms, 50MB)
+// 테스트 10 〉	통과 (31.33ms, 45.2MB)
+// 테스트 11 〉	통과 (0.06ms, 30.2MB)
+// 테스트 12 〉	통과 (0.06ms, 30.4MB)
