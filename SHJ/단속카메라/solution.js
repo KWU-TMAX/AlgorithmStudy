@@ -1,36 +1,78 @@
+// function solution(routes) {
+//     let array = [];
+
+//     function check(route) {
+//         let ret = false;
+//         if(array.length === 0) {
+//             array.push(route);
+//             return;
+//         }
+//         for(let i=0; i<array.length; i++) {
+//             if(array[i][0] <= route[0] && array[i][1] >= route[0]) {
+//                 ret = true;
+//                 array[i][0] = route[0];
+//             }
+//             if(array[i][0] <= route[1] && array[i][1] >= route[1]) {
+//                 ret = true;
+//                 array[i][1] = route[1];
+//             }
+//             if(ret) {
+//                 return;
+//             }
+//         }
+//         array.push(route);
+//     }
+
+//     routes.sort((a,b) => b[0] - a[0]);
+//     for(const route of routes) {
+//         check(route);
+//     }
+//     return array.length;
+// }
+
+// 정확성  테스트
+// 테스트 1 〉	실패 (0.17ms, 30.4MB)
+// 테스트 2 〉	실패 (0.26ms, 30.3MB)
+// 테스트 3 〉	실패 (0.27ms, 30.1MB)
+// 테스트 4 〉	실패 (0.29ms, 30.3MB)
+// 테스트 5 〉	실패 (0.31ms, 30.5MB)
+// 효율성  테스트
+// 테스트 1 〉	실패 (8.80ms, 32.2MB)
+// 테스트 2 〉	실패 (4.60ms, 32.2MB)
+// 테스트 3 〉	실패 (11.85ms, 32MB)
+// 테스트 4 〉	실패 (0.92ms, 30.1MB)
+// 테스트 5 〉	실패 (13.28ms, 32.5MB)
+
 function solution(routes) {
-    let array = [];
-
-    function check(route) {
-        let ret = false;
-        if(array.length === 0) {
-            array.push(route);
-            return;
+    routes.sort((a,b) => a[0] - b[0]);
+    let out = routes[0][1];
+    let ret = 0;
+    for(let i=1; i<routes.length; i++) {
+        if(out < routes[i][0]) {
+            out = routes[i][1];
+            ret++;
         }
-        for(let i=0; i<array.length; i++) {
-            if(array[i][0] <= route[0] && array[i][1] >= route[0]) {
-                ret = true;
-                array[i][0] = route[0];
-            }
-            if(array[i][0] <= route[1] && array[i][1] >= route[1]) {
-                ret = true;
-                array[i][1] = route[1];
-            }
-            if(ret) {
-                return;
-            }
+        if (out > routes[i][1]) {
+            out = routes[i][1];
         }
-        array.push(route);
     }
-
-    routes.sort((a,b) => b[0] - a[0]);
-    for(const route of routes) {
-        check(route);
-    }
-    return array.length;
+    return ret+1;
 }
 
-// solution([[-20,-15], [-14,-5], [-18,-13], [-5,-3]]);
+/* 정확성  테스트
+테스트 1 〉	통과 (0.08ms, 30.3MB)
+테스트 2 〉	통과 (0.13ms, 30.1MB)
+테스트 3 〉	통과 (0.11ms, 30.1MB)
+테스트 4 〉	통과 (0.10ms, 30.2MB)
+테스트 5 〉	통과 (0.09ms, 30.3MB)
+효율성  테스트
+테스트 1 〉	통과 (1.03ms, 30.2MB)
+테스트 2 〉	통과 (0.86ms, 29.9MB)
+테스트 3 〉	통과 (2.71ms, 31.7MB)
+테스트 4 〉	통과 (0.22ms, 30.1MB)
+테스트 5 〉	통과 (3.07ms, 31.8MB) */
+
+console.log(solution([[-20,-15], [-14,-5], [-18,-13], [-5,-3]]));
 console.log(solution([[1,15], [12,15], [16,17], [16,18], [3, 16], [9,11]]));
 
 /* https://mungto.tistory.com/49
