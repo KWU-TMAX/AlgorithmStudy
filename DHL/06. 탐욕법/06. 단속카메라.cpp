@@ -15,12 +15,12 @@ int solution(vector<vector<int>> routes) {
         [-20, 15]
     */
     int answer = 0;
-    int flag = 30001;
+    int point = 30001;
     // 첫비교시 진출점의 최대 
     
     for(size_t i = 0; i < routes.size(); i++){
-        if(flag > routes[i][1]){
-            flag = routes[i][0];
+        if(point > routes[i][1]){
+            point = routes[i][0];
             // 구간 내 ++
             answer++;
         }
